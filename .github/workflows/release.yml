@@ -38,6 +38,7 @@ jobs:
 
       - name: Run semantic-release
         env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           MY_PAT: ${{ secrets.MY_PAT }}
         run: npm run release
 
