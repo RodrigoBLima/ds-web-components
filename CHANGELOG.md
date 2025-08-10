@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.0...v1.0.1) (2025-08-10)
+
+
+### Bug Fixes
+
+* adjust to correctly package name on npm ([b9cc654](https://github.com/RodrigoBLima/ds-web-components/commit/b9cc6544c2775205190d26fce692717297df458a))
+
 # 1.0.0 (2025-08-10)
 
 
