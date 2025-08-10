@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.5...v1.0.6) (2025-08-10)
+
+
+### Bug Fixes
+
+* adjust command to build storybook ([b5527c8](https://github.com/RodrigoBLima/ds-web-components/commit/b5527c854aa32d48d82c4639ca2d9cf151a3a2b0))
+
 ## [1.0.5](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.4...v1.0.5) (2025-08-10)
 
 
