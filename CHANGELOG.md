@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.2...v1.0.3) (2025-08-10)
+
+
+### Bug Fixes
+
+* add npmrc on root ([9e3239c](https://github.com/RodrigoBLima/ds-web-components/commit/9e3239c50f020c9a5f5d8f20979135e5a620a228))
+
 ## [1.0.2](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.1...v1.0.2) (2025-08-10)
 
 
