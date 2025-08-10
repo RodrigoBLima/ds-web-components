@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.4...v1.0.5) (2025-08-10)
+
+
+### Bug Fixes
+
+* add permission to write package ([aabfe54](https://github.com/RodrigoBLima/ds-web-components/commit/aabfe54d9557a223e7eb6a5fcf2f92f65ca91f3e))
+
 ## [1.0.4](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.3...v1.0.4) (2025-08-10)
 
 
