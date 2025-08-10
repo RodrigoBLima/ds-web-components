@@ -1,8 +1,8 @@
-import { newSpecPage } from '@stencil/core/testing';
-import { WcButton } from './wc-button';
+import { newSpecPage } from "@stencil/core/testing";
+import { WcButton } from "./wc-button";
 
-describe('wc-button', () => {
-  it('renders with primary variant and default props', async () => {
+describe("wc-button", () => {
+  it("renders with primary variant and default props", async () => {
     const page = await newSpecPage({
       components: [WcButton],
       html: `<wc-button></wc-button>`,

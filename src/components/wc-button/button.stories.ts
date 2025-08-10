@@ -1,8 +1,8 @@
-import type { Meta } from '@storybook/web-components';
+import type { Meta } from "@storybook/web-components";
 
 const meta: Meta = {
-  title: 'Components/Button',
-  component: 'wc-button',
+  title: "Components/Button",
+  component: "wc-button",
   args: {
     // Nenhum prop neste exemplo, pois só tem slot
   },
@@ -14,19 +14,19 @@ const meta: Meta = {
 export default meta;
 
 // Template básico
-const Template = (args) => {
+const Template = args => {
   // Usamos template string para slot
-  return `<wc-button>${args.children || 'Clique aqui'}</wc-button>`;
+  return `<wc-button>${args.children || "Clique aqui"}</wc-button>`;
 };
 
 // Exporta uma história padrão
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Clique aqui',
+  children: "Clique aqui",
 };
 
 // Exemplo com texto diferente
 export const WithCustomText = Template.bind({});
 WithCustomText.args = {
-  children: 'Botão personalizado',
+  children: "Botão personalizado",
 };
