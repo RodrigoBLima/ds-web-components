@@ -7,9 +7,9 @@ on:
     branches: [main]
 
 permissions:
-  contents: write # Permite push de tags e commits
-  issues: write # Permite criar issues (para reports do semantic-release)
-  pull-requests: write
+  contents: write # para semantic-release criar tags, commits
+  issues: write # para issues do semantic-release (opcional)
+  pull-requests: write # se semantic-release abrir PRs (opcional)
 
 jobs:
   release:
@@ -25,6 +25,11 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
 
+      - name: Configure npm authentication
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.MY_PAT }}" > ~/.npmrc
+          echo "@rodrigoblima:registry=https://npm.pkg.github.com/" >> ~/.npmrc
+
       - name: Install dependencies
         run: npm install
 
@@ -33,7 +38,7 @@ jobs:
 
       - name: Run semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_PAT: ${{ secrets.MY_PAT }}
         run: npm run release
 
       - name: Build Storybook
