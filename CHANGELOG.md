@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.1...v1.0.2) (2025-08-10)
+
+
+### Bug Fixes
+
+* adjust to run pipeline and publish package ([28388e5](https://github.com/RodrigoBLima/ds-web-components/commit/28388e5a2775d8d40fbb07c9576506bbbbe7fd50))
+* adjust to run pipeline and publish package ([c3f0b63](https://github.com/RodrigoBLima/ds-web-components/commit/c3f0b63b7f7c630760b70cebb04c89504bc8e21d))
+
 ## [1.0.1](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.0...v1.0.1) (2025-08-10)
 
 
