@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write # Permite push de tags e commits
+  issues: write # Permite criar issues (para reports do semantic-release)
+  pull-requests: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
