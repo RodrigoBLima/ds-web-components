@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.3...v1.0.4) (2025-08-10)
+
+
+### Bug Fixes
+
+* remove create .npmrc on pipe ([ebfbe3e](https://github.com/RodrigoBLima/ds-web-components/commit/ebfbe3e5a2e6239d6033675699adf9a8a97ae151))
+
 ## [1.0.3](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.2...v1.0.3) (2025-08-10)
 
 
