@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write # para semantic-release criar tags, commits
+  packages: write
   issues: write # para issues do semantic-release (opcional)
   pull-requests: write # se semantic-release abrir PRs (opcional)
 
@@ -24,6 +25,10 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
+
+      - name: Setup npm auth
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
 
       - name: Install dependencies
         run: npm install
