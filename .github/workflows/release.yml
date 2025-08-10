@@ -25,11 +25,6 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
 
-      - name: Configure npm authentication
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.MY_PAT }}" > ~/.npmrc
-          echo "@rodrigoblima:registry=https://npm.pkg.github.com/" >> ~/.npmrc
-
       - name: Install dependencies
         run: npm install
 
