@@ -6,56 +6,56 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface WcButton {
         /**
-          * The first name
+          * @default false
          */
-        "first": string;
+        "disabled": boolean;
         /**
-          * The last name
+          * @default 'button'
          */
-        "last": string;
+        "type": 'button' | 'submit' | 'reset';
         /**
-          * The middle name
+          * @default 'primary'
          */
-        "middle": string;
+        "variant": 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLWcButtonElement extends Components.WcButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLWcButtonElement: {
+        prototype: HTMLWcButtonElement;
+        new (): HTMLWcButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "wc-button": HTMLWcButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface WcButton {
         /**
-          * The first name
+          * @default false
          */
-        "first"?: string;
+        "disabled"?: boolean;
         /**
-          * The last name
+          * @default 'button'
          */
-        "last"?: string;
+        "type"?: 'button' | 'submit' | 'reset';
         /**
-          * The middle name
+          * @default 'primary'
          */
-        "middle"?: string;
+        "variant"?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "wc-button": WcButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "wc-button": LocalJSX.WcButton & JSXBase.HTMLAttributes<HTMLWcButtonElement>;
         }
     }
 }

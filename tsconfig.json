@@ -15,12 +15,19 @@
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "jsxFragmentFactory": "h.Fragment"
+    "jsxFragmentFactory": "h.Fragment",
+    "skipLibCheck": true,
+    "types": [
+      "@stencil/core",
+      "jest",
+      "node"
+    ]
   },
   "include": [
-    "src"
+    "src",
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/**/*.stories.tsx"
   ]
 }

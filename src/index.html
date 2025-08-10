@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/ds-assessoriavip.esm.js"></script>
-    <script nomodule src="/build/ds-assessoriavip.js"></script>
-  </head>
-  <body>
-    <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="/build/ds-web-components.esm.js"></script>
+  <script nomodule src="/build/ds-web-components.js"></script>
+</head>
+
+<body>
+  <wc-button>Don't call me a framework</wc-button>
+
+  <wc-button variant="danger" type="submit">
+    <span slot="left">
+      <svg width="16" height="16" fill="#FFF" viewBox="0 0 20 20">
+        <path d="M5 10l4 4L15 7" />
+      </svg>
+    </span>
+    Salvar
+    <span slot="right">
+      <svg width="16" height="16" fill="#FFF" viewBox="0 0 20 20">
+        <path d="M10 3v14m7-7H3" />
+      </svg>
+    </span>
+  </wc-button>
+</body>
+
 </html>
