@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.9...v1.0.10) (2025-08-11)
+
+
+### Bug Fixes
+
+* add peer dependencies ([c18e6ea](https://github.com/RodrigoBLima/ds-web-components/commit/c18e6ea776fe8312fb5da7fe2aff0a2cc6fbf31e))
+
 ## [1.0.9](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.8...v1.0.9) (2025-08-11)
 
 
