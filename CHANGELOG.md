@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.10...v1.0.11) (2025-08-11)
+
+
+### Bug Fixes
+
+* set relative path on react files ([a554a79](https://github.com/RodrigoBLima/ds-web-components/commit/a554a79b70b248df688c4231ebc023449c8be230))
+
 ## [1.0.10](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.9...v1.0.10) (2025-08-11)
 
 
