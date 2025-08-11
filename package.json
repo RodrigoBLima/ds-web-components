@@ -45,8 +45,8 @@
       "types": "./dist/components/*.d.ts"
     },
     "./loader": {
-      "import": "./loader/index.js",
-      "require": "./loader/index.cjs.js"
+      "import": "./dist/loader/index.js",
+      "require": "./dist/loader/index.cjs.js"
     },
     "./vue": {
       "import": "./dist/vue/components.js"

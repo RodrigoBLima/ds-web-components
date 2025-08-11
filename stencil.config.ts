@@ -23,7 +23,7 @@ export const config: Config = {
     // Build principal do Stencil
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      esmLoaderPath: './loader',
     },
 
     // Versão custom elements (caso precise importar direto no browser)
@@ -43,10 +43,6 @@ export const config: Config = {
     vueOutputTarget({
       componentCorePackage: 'ds-web-components',
       proxiesFile: './dist/vue/components.ts',
-      componentModels: [],
-      includeImportCustomElements: true,
-      includeDefineCustomElements: false,
-      loaderDir: './loader',
     }),
 
     // React proxies com suporte a SSR
