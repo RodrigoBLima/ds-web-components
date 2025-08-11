@@ -1,6 +1,6 @@
 {
   "name": "@rodrigoblima/ds-web-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "ui",
     "ui-kit"
@@ -15,7 +15,7 @@
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
-    "storybook": "npm run build && storybook dev -p 6006 --no-open",
+    "storybook": "stencil build && storybook dev -p 6006 --no-open",
     "storybook:build": "storybook build",
     "storybook:deploy": "gh-pages -d storybook-static",
     "test": "stencil test --spec --e2e",
@@ -50,7 +50,7 @@
       "require": "./dist/loader/index.cjs.js"
     },
     "./vue": {
-      "import": "./dist/vue/components.js"
+      "import": "./dist/vue/components.ts"
     },
     "./hydrate": {
       "types": "./dist/hydrate/index.d.ts",

@@ -13,6 +13,7 @@ export const config: Config = {
   namespace: 'ds-web-components',
   globalStyle: 'src/styles/global.css',
   enableCache: false,
+  sourceMap: false,
   outputTargets: [
     // Hydrate script para SSR
     {
