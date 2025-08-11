@@ -10,15 +10,15 @@ export namespace Components {
         /**
           * @default false
          */
-        "disabled": boolean;
+        disabled: boolean;
         /**
           * @default "button"
          */
-        "type": "button" | "submit" | "reset";
+        type: "button" | "submit" | "reset";
         /**
           * @default "primary"
          */
-        "variant": "primary" | "secondary" | "success" | "warning" | "danger";
+        variant: "primary" | "secondary" | "success" | "warning" | "danger";
     }
 }
 declare global {

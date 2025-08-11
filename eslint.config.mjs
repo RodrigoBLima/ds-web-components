@@ -7,8 +7,8 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
-    files: ["src/**/*.{js,mjs,cjs,ts,mts,cts,tsx}"], // colocar na raiz do projeto
-    ignores: ["eslint.config.mjs"],
+    files: ["src/**/*.{js,mjs,cjs,ts,mts,cts,tsx}"],
+    ignorePatterns: ["**/*.d.ts", "eslint.config.mjs"],
     plugins: {
       js,
       prettier: prettierPlugin,
