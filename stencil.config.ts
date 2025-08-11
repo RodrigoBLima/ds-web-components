@@ -49,7 +49,6 @@ export const config: Config = {
     // React proxies com suporte a SSR
     reactOutputTarget({
       outDir: './dist/react',
-      stencilPackageName: 'ds-web-components',
       hydrateModule: 'ds-web-components/hydrate',
       customElementsDir: 'dist/components',
       clientModule: 'ds-web-components',
