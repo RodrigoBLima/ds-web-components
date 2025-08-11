@@ -6,56 +6,55 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface WcButton {
-        /**
-          * @default false
-         */
-        "disabled": boolean;
-        /**
-          * @default "button"
-         */
-        "type": "button" | "submit" | "reset";
-        /**
-          * @default "primary"
-         */
-        "variant": "primary" | "secondary" | "success" | "warning" | "danger";
-    }
+  interface WcButton {
+    /**
+     * @default false
+     */
+    disabled: boolean;
+    /**
+     * @default "button"
+     */
+    type: "button" | "submit" | "reset";
+    /**
+     * @default "primary"
+     */
+    variant: "primary" | "secondary" | "success" | "warning" | "danger";
+  }
 }
 declare global {
-    interface HTMLWcButtonElement extends Components.WcButton, HTMLStencilElement {
-    }
-    var HTMLWcButtonElement: {
-        prototype: HTMLWcButtonElement;
-        new (): HTMLWcButtonElement;
-    };
-    interface HTMLElementTagNameMap {
-        "wc-button": HTMLWcButtonElement;
-    }
+  interface HTMLWcButtonElement extends Components.WcButton, HTMLStencilElement {}
+  var HTMLWcButtonElement: {
+    prototype: HTMLWcButtonElement;
+    new (): HTMLWcButtonElement;
+  };
+  interface HTMLElementTagNameMap {
+    "wc-button": HTMLWcButtonElement;
+  }
 }
 declare namespace LocalJSX {
-    interface WcButton {
-        /**
-          * @default false
-         */
-        "disabled"?: boolean;
-        /**
-          * @default "button"
-         */
-        "type"?: "button" | "submit" | "reset";
-        /**
-          * @default "primary"
-         */
-        "variant"?: "primary" | "secondary" | "success" | "warning" | "danger";
-    }
-    interface IntrinsicElements {
-        "wc-button": WcButton;
-    }
+  interface WcButton {
+    /**
+     * @default false
+     */
+    disabled?: boolean;
+    /**
+     * @default "button"
+     */
+    type?: "button" | "submit" | "reset";
+    /**
+     * @default "primary"
+     */
+    variant?: "primary" | "secondary" | "success" | "warning" | "danger";
+  }
+  interface IntrinsicElements {
+    "wc-button": WcButton;
+  }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
-    export namespace JSX {
-        interface IntrinsicElements {
-            "wc-button": LocalJSX.WcButton & JSXBase.HTMLAttributes<HTMLWcButtonElement>;
-        }
+  export namespace JSX {
+    interface IntrinsicElements {
+      "wc-button": LocalJSX.WcButton & JSXBase.HTMLAttributes<HTMLWcButtonElement>;
     }
+  }
 }

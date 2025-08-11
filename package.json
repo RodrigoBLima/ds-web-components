@@ -1,6 +1,6 @@
 {
   "name": "@rodrigoblima/ds-web-components",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "keywords": [
     "ui",
     "ui-kit"
@@ -23,6 +23,7 @@
     "generate": "stencil generate",
     "lint": "eslint ./src --ext .ts,.tsx",
     "lint:fix": "prettier --write \"src/**/*.{ts,tsx,js,css,json}\"",
+    "pre-commit": "npm --no-git-tag-version version patch && git add .",
     "prepare": "husky",
     "release": "semantic-release"
   },
