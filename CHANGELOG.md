@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.8...v1.0.9) (2025-08-11)
+
+
+### Bug Fixes
+
+* remove stencilPackageName from config ([e59e9cf](https://github.com/RodrigoBLima/ds-web-components/commit/e59e9cfc0f605edf32847a4c8c0da9cae1403e06))
+
 ## [1.0.8](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.7...v1.0.8) (2025-08-11)
 
 
