@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.7...v1.0.8) (2025-08-11)
+
+
+### Bug Fixes
+
+* adjust source map and correctly vue type import ([1b89043](https://github.com/RodrigoBLima/ds-web-components/commit/1b89043356c25877dd6869e1292465ce427ad0c7))
+
 ## [1.0.7](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.6...v1.0.7) (2025-08-11)
 
 
