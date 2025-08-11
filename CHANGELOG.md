@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.6...v1.0.7) (2025-08-11)
+
+
+### Bug Fixes
+
+* add upgrade package json when has new commit ([e8d544b](https://github.com/RodrigoBLima/ds-web-components/commit/e8d544b5cc7da06a54ca64a3b0f5d53bf8b3b9c7))
+
 ## [1.0.6](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.5...v1.0.6) (2025-08-10)
 
 
