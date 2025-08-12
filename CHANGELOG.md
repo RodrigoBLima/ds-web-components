@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.11...v1.0.12) (2025-08-12)
+
+
+### Bug Fixes
+
+* build react dir on dist to generate .js ([57b5c8b](https://github.com/RodrigoBLima/ds-web-components/commit/57b5c8b1faf2c0a3a2b733b5d2567f9949d117e6))
+
 ## [1.0.11](https://github.com/RodrigoBLima/ds-web-components/compare/v1.0.10...v1.0.11) (2025-08-11)
 
 
