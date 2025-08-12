@@ -1,6 +1,6 @@
 {
   "name": "@rodrigoblima/ds-web-components",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "keywords": [
     "ui",
     "ui-kit"
@@ -13,9 +13,10 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/ds-web-components/ds-web-components.esm.js",
   "scripts": {
-    "build": "stencil build",
-    "start": "stencil build --dev --watch --serve",
-    "storybook": "stencil build && storybook dev -p 6006 --no-open",
+    "build": "stencil build && npm run build:react",
+    "build:react": "tsc -p tsconfig.react.json",
+    "start": "stencil build && npm run build:react --dev --watch --serve",
+    "storybook": "stencil build && npm run build:react && storybook dev -p 6006 --no-open",
     "storybook:build": "storybook build",
     "storybook:deploy": "gh-pages -d storybook-static",
     "test": "stencil test --spec --e2e",
@@ -59,7 +60,8 @@
       "default": "./dist/hydrate/index.js"
     },
     "./react": {
-      "import": "./dist/react/components.ts"
+      "import": "./dist/react/components.js",
+      "types": "./dist/react/components.d.ts"
     }
   },
   "files": [

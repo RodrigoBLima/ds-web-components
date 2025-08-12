@@ -30,7 +30,7 @@ export const config: Config = {
     // Versão custom elements (caso precise importar direto no browser)
     {
       type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
+      dir: 'dist/components',
       externalRuntime: false,
      },
     {
@@ -49,10 +49,10 @@ export const config: Config = {
     // React proxies com suporte a SSR
     reactOutputTarget({
       outDir: './dist/react',
-      hydrateModule: '../hydrate',
       stencilPackageName: '.',
       customElementsDir: '../components',
-      clientModule: '..',
+      hydrateModule: '../hydrate',
+      clientModule: 'ds-web-components',
     }),
 
   ],
